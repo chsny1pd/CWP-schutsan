@@ -1,8 +1,8 @@
-para_input = input()
-para = [i.strip('"') for i in para_input.split('" "')]
+#!/usr/bin/env python3
+import sys
 
-if para[0]:
-    for i in para:
+if len(sys.argv) > 1:
+    for i in sys.argv[1:]:
         if not i.endswith("ism"):
             print(f"{i}ism")
 else:
