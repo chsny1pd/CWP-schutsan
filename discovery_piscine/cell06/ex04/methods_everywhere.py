@@ -8,7 +8,6 @@ def enlarge(text):
     enlarged = text.ljust(8, 'Z')
 
     return enlarged
-
 def main(input_text):
     """print text with 8 letters call method shrink, enlarge"""
     if not input_text:
